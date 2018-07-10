@@ -1,0 +1,112 @@
+body{
+
+	font-family: 'Alegreya', serif; 
+	background: #e6f2ff;
+	margin-left: 1em;
+	margin-right: 1em;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header" "grid" "footer";
+	
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.grid {
+    grid-area: grid;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+a{
+
+color:red;
+font-size: 1.5em;
+font-weight: 800;
+text-align: left;
+text-decoration: none;
+
+
+}
+
+
+header{
+
+	padding: 1em;
+
+}
+
+
+
+.container{
+	display: grid;
+	color: white;
+	background-image: url('https://c.stocksy.com/a/3tM200/z0/564637.jpg');
+	background-size: cover;
+	grid-template-columns: 1fr;
+	grid-row: 1/2;
+	text-align: right;
+	padding: 5%;
+	font-size: 2em;
+
+}
+
+
+
+h2{
+	font-weight: bold;
+	text-align: center;
+
+
+}
+.kick{
+	text-align: center;
+
+ 
+
+}
+
+
+section{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 2em;
+
+}
+
+img{
+	width: 100%;
+	height: 70%;
+	align-self: center;
+	border-radius: 6%;
+}
+
+
+footer{
+
+	background: gray;
+	text-align:center;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  .grid{
+  display: grid;
+  width: 100%;
+  max-width: 770px;
+  margin: 10% auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 200px 200px auto 200px 200px 200px auto 200px 200px auto;
+  grid-gap: 25px;    }
+}
+  
+
+
